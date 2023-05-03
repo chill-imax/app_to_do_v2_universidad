@@ -30,7 +30,7 @@ export function Home() {
   const addTodo = (e) => {
     e.preventDefault();
     addDoc(collection(db, "todos"), {
-      todo: input,
+      nameTodo: input,
       timestamp: serverTimestamp(),
       completed: false,
     });
