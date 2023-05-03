@@ -38,7 +38,7 @@ export function Home() {
   };
   return (
     <div className="App">
-      <h2> TODO List App</h2>
+      <h2> </h2>
       <form>
         <TextField
           id="outlined-basic"

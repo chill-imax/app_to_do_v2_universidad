@@ -4,6 +4,8 @@ import { Login } from "./Routes/Login";
 import { Register } from "./Routes/Register";
 import { AuthProvider } from "./contex/authContex";
 import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Logout } from "./Routes/Logout";
 
 function AppT() {
   return (
@@ -15,6 +17,7 @@ function AppT() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/logout" element={<Logout />} />
           </Routes>
         </AuthProvider>
       </div>
