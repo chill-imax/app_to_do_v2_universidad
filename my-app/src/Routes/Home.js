@@ -11,6 +11,7 @@ import {
   addDoc,
 } from "firebase/firestore";
 import "../App.css";
+import Navbar from "../components/Navbar";
 
 const q = query(collection(db, "todos"), orderBy("timestamp", "desc"));
 
@@ -38,7 +39,12 @@ export function Home() {
   };
   return (
     <div className="App">
-      <h2> </h2>
+      <div>
+        <Navbar />
+      </div>
+      <div>
+        <h3>WELCOME AGAIN!</h3>
+      </div>
       <form>
         <TextField
           id="outlined-basic"
