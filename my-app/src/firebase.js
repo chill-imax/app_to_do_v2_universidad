@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB0oudVuIPzOe0rgiSH8mqKzvlI-Kb1Fhs",
-  authDomain: "project-todo-38a89.firebaseapp.com",
-  projectId: "project-todo-38a89",
-  storageBucket: "project-todo-38a89.appspot.com",
-  messagingSenderId: "297497060062",
-  appId: "1:297497060062:web:a801e4df90d512b6fe184f",
-  measurementId: "G-9B811406FR",
+  apiKey: "AIzaSyDhDfSgC4pW8fdUMZIDZcpQbjDDZJ2IL48",
+  authDomain: "todo-app-5fee6.firebaseapp.com",
+  projectId: "todo-app-5fee6",
+  storageBucket: "todo-app-5fee6.appspot.com",
+  messagingSenderId: "975799127949",
+  appId: "1:975799127949:web:239372b6ab1b9c4dc8f7c4",
+  measurementId: "G-0XG3FST2YY",
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
@@ -19,4 +19,4 @@ export { setDoc };
 export const auth = getAuth(firebaseApp);
 export { db };
 
-//https://project-todo-38a89.firebaseapp.com/__/auth/handler <<face-auth
+//https://todo-app-5fee6.web.ap
