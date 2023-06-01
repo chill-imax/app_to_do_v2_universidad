@@ -6,6 +6,7 @@ import { setDoc } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyDhDfSgC4pW8fdUMZIDZcpQbjDDZJ2IL48",
   authDomain: "todo-app-5fee6.firebaseapp.com",
+  databaseURL: "https://todo-app-5fee6-default-rtdb.firebaseio.com",
   projectId: "todo-app-5fee6",
   storageBucket: "todo-app-5fee6.appspot.com",
   messagingSenderId: "975799127949",

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FormLabel,
   List,
@@ -15,7 +16,7 @@ import "./todo.css";
 
 const Todo = ({ arr }) => {
   return (
-    <List className="todo__list">
+    <List className="todo_list">
       <ListItem>
         <Checkbox {...FormLabel} />
         <ListItemAvatar />

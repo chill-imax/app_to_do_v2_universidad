@@ -1,33 +1,64 @@
-import React from "react";
+import { useState } from "react";
 import "../App.css";
+import { useAuth } from "../contex/authContex";
+import { useNavigate } from "react-router-dom";
 
 export function Login() {
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
+
+  const { login } = useAuth();
+  const navigate = useNavigate();
+  const [error, setError] = useState();
+
+  const handleChange = ({ target: { name, value } }) =>
+    setUser({ ...user, [name]: value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await login(user.email, user.password);
+      navigate("/");
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
   return (
     <div>
-      <section className="vh-100 gradient-custom">
+      <section className="fondodegrade">
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5">
               <div
                 className="card bg-dark text-white"
-                Style="border-radius: 1rem;"
+                style={{ borderRadius: "1rem" }}
               >
-                <div className="card-body p-5 text-center">
+                <div className="card-body p-5 ">
                   <div className="mb-md-5 mt-md-4 pb-5">
-                    <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
+                    <h2 className="fw-bold mb-2 text-uppercase">
+                      Hello Again!!
+                    </h2>
                     <p className="text-white-50 mb-5">
-                      Please enter your login and password!
+                      We are happy to have you back.
                     </p>
-                    <form className="needs-validation">
+
+                    {error && <p>{error}</p>}
+
+                    <form className="needs-validation" onSubmit={handleSubmit}>
                       <div className="form-outline form-white mb-4 was-validated">
-                        <label className="form-label" for="typeEmailX">
+                        <label className="form-label" htmlFor="typeEmailX">
                           Email
                         </label>
                         <input
                           type="email"
-                          id="typeEmailX"
+                          id="email"
                           className="form-control form-control-lg"
                           placeholder="Write your Email"
+                          onChange={handleChange}
                           required
                         />
                         <div className="invalid-feedback">
@@ -41,52 +72,64 @@ export function Login() {
                         </label>
                         <input
                           type="password"
-                          id="typePasswordX"
+                          id="password"
                           className="form-control form-control-lg"
                           placeholder="Write your Password"
+                          onChange={handleChange}
                           required
                         />
                         <div className="invalid-feedback">
                           Please enter your password
                         </div>
                       </div>
-                      <div className="form-group">
-                        <input
-                          type="checkbox"
-                          className="form-check-input"
-                        ></input>
-                        <label htmlFor="check" className="form-check-label">
-                          Remember me!
-                        </label>
+
+                      <div className="input-group mb-3 d-flex justify-content-between">
+                        <div className="form-check">
+                          <input
+                            type="checkbox"
+                            id="remember-me"
+                            className="form-check-input"
+                          ></input>
+                          <label
+                            htmlFor="check"
+                            className="form-check-label text-secondary"
+                          >
+                            Remember me!
+                          </label>
+                        </div>
+                        <div className="forgot">
+                          <p className="small mb-5 pb-lg-2">
+                            <a className="text-white-50" href="#!">
+                              Forgot Password?
+                            </a>
+                          </p>
+                        </div>
                       </div>
-                      <p className="small mb-5 pb-lg-2">
-                        <a className="text-white-50" href="#!">
-                          Forgot password?
-                        </a>
-                      </p>
+                      <div className="text-center">
+                        <button
+                          className="btn btn-outline-light btn-lg mb-4 w-100"
+                          type="submit"
+                        >
+                          Login
+                        </button>
 
-                      <button
-                        className="btn btn-outline-light btn-lg px-5"
-                        type="submit"
-                      >
-                        Login
-                      </button>
+                        <p>Or sign in with</p>
+
+                        <div className="d-flex justify-content-center">
+                          <a href="#!" className="text-white">
+                            <i className="fab fa-facebook-f fa-lg"></i>
+                          </a>
+                          <a href="#!" className="text-white">
+                            <i className="fab fa-github fa-lg mx-4 px-2"></i>
+                          </a>
+                          <a href="#!" className="text-white">
+                            <i className="fab fa-google fa-lg"></i>
+                          </a>
+                        </div>
+                      </div>
                     </form>
-
-                    <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                      <a href="#!" className="text-white">
-                        <i className="fab fa-facebook-f fa-lg"></i>
-                      </a>
-                      <a href="#!" className="text-white">
-                        <i className="fab fa-twitter fa-lg mx-4 px-2"></i>
-                      </a>
-                      <a href="#!" className="text-white">
-                        <i className="fab fa-google fa-lg"></i>
-                      </a>
-                    </div>
                   </div>
-
-                  <div>
+                  <div className="text-center">
                     <p className="mb-0">
                       Don't have an account?{" "}
                       <a href="/register" className="text-white-50 fw-bold">

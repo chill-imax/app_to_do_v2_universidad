@@ -1,4 +1,4 @@
-.todo__list {
+.todo_list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,12 +7,12 @@
   margin-bottom: 10px !important;
 }
 @media (max-width: 768px) {
-  .todo__list {
+  .todo_list {
     width: 600px;
   }
 }
 @media (max-width: 576px) {
-  .todo__list {
+  .todo_list {
     width: 400px;
   }
 }
