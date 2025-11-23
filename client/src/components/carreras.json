@@ -1,0 +1,69 @@
+[
+    {
+        "carrera" : "Ingeniería en sistemas",
+        "emoticon": "🌐",
+        "semestres" : [
+            {"numero" : 1, 
+            "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 2, 
+            "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 3, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 4, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 5, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 6, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 7, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 8, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 9, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            }
+        ]
+    },{
+        "carrera" : "Ingeniería civil",
+        "emoticon": "📐",
+        "semestres" : [
+            {"numero" : 1, 
+            "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 2, 
+            "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 3, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 4, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 5, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 6, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 7, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 8, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 9, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            }
+        ]
+    },{
+        "carrera" : "T.S.U Análisis y diseño de sistemas",
+        "emoticon": "🧑‍💻",
+        "semestres" : [
+            {"numero" : 1, 
+            "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 2, 
+            "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 3, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 4, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            },{"numero" : 5, 
+                "asignaturas" : ["Educación Ambiental", "Hombre, sociedad, ciencia y tec...", "Inglés I", "Dibujo", "Matemática I", "Geometría Analítica", "Seminario I", "DIN I"]
+            }
+        ]
+    }
+]
+
+
